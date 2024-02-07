@@ -2,15 +2,14 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  generate: {
-    // prerendering 설정
-    routes: [
-      // prerendering할 라우트 목록
-      '/',
-      '/page1',
-      '/page2',
-      // 기타 라우트...
-    ],
+
+  
+  router: {
+    base: '/nuxt3-github-page/'
   },
+  generate: {
+    dir: 'dist/nuxt3-github-page'
+  }
+
   
 });
